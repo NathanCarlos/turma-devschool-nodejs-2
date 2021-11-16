@@ -2,7 +2,7 @@
 
 Exercício 1) Crie uma api com nodejs utilizando express e na rota base da aplicação(GET) retorne para o endpoint o seguinte objeto: { message: "Hello World" }
 
-Exercício 2) Crie um arquivo com uma rota get para retornar o seguinte objeto: 
+Exercício 2) Crie um arquivo com uma rota *GET* para retornar o seguinte objeto: 
 >{ products: [
 {
         id: 1,
@@ -41,6 +41,8 @@ Exercício 2) Crie um arquivo com uma rota get para retornar o seguinte objeto:
     }
 ]}
 
-Exercício 3) Crie um endpoint de post para adicionar item no array do exercício 2.
-Exercício 4) Crie um endpoint de put para atualizar um item no array do exercício 2.
-Exercício 5) Crie um endpoint de delete para remover um item no array do exercício 2.
+Exercício 3) Crie um endpoint de *POST* para adicionar item no array do exercício 2.
+
+Exercício 4) Crie um endpoint de *PUT* para atualizar um item no array do exercício 2.
+
+Exercício 5) Crie um endpoint de *DELETE* para remover um item no array do exercício 2.
