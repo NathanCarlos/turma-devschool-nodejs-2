@@ -1,6 +1,6 @@
 # Exercícios Banco de Dados
 
-Exercício 1) Crie um banco de dados para um sistema de tarefas e crie uma tabela de tarefas no mysql para armazenar os dados do array abaixo:
+Exercício 1) Crie um banco de dados para um sistema de tarefas e crie uma tabela de tarefas no postgresql para armazenar os dados do array abaixo:
 
 >[
     { id: 1, description: 'Criar um projeto básico', completed: false },
