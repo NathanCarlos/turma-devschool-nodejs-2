@@ -15,6 +15,12 @@ export class StudentRepository {
         .findOne({ id });
     }
 
+    public static findByEmailAndPassword(email: string, password: string) {
+        return getConnection()
+        .getRepository(StudentEntity)
+        .findOne({ email, password });
+    }
+
     public static create(student: Partial<Student>) {
         return getConnection()
         .getRepository(StudentEntity)

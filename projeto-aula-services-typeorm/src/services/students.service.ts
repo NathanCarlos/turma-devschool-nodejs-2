@@ -13,6 +13,10 @@ export class StudentsService {
         return StudentRepository.getById(id);
     }
 
+    getByEmailAndPassword(email: string, password: string) {
+        return StudentRepository.findByEmailAndPassword(email, password);
+    }
+
     create(student: Student) {
         return StudentRepository.create(student);
     }

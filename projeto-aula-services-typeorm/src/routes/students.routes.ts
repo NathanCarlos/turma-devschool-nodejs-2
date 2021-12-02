@@ -19,6 +19,15 @@ router.get('/id/:id', async (req: Request, res: Response) => {
     }
 });
 
+router.post('/authenticate', async (req: Request, res: Response) => {
+    const student = await studentService.getByEmailAndPassword(req.body.email, req.body.password);
+    if (student) {
+        res.status(200).send(student);
+    } else {
+        res.status(404).send({ message: 'Usuário/senha inválidos!' });
+    }
+});
+
 router.post('/create', async (req: Request, res: Response) => {
     const student = req.body;
     const studentCreated = await studentService.create(student);

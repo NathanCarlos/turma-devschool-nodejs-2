@@ -20,4 +20,13 @@ export class StudentEntity {
 
     @Column({ name: 'data_criacao', type: 'date' })
     inclusionDate?: Date | string;
+
+    @Column({ name: 'data_ultimo_pagamento', type: 'date' })
+    lastMontlyPayment?: Date | string;
+
+    @Column({ name: 'registro_valido', type: 'boolean' })
+    validRegistration?: boolean;
+
+    @Column({ name: 'curso', type: 'varchar', length: 30 })
+    course?: string;
 }
